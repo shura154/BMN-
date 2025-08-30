@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMN</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Inter:wght@400;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="w-full bg-white shadow-md fixed top-0 left-0 z-50">
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between"
+      >
+        <a class="flex items-center space-x-3" href="#">
+          <img
+            alt="Logo BMN luxury gold emblem on black background"
+            class="w-12 h-12 object-contain"
+            height="48"
+            src="ChatGPT Image 29 Agu 2025, 12.21.16.png"
+            width="48"
+          />
+          <span
+            class="text-2xl font-playfair font-bold text-yellow-600 tracking-wide"
+          >
+            BMN
+          </span>
+        </a>
+        <ul class="hidden md:flex space-x-10 font-semibold text-gray-700">
+          <li>
+            <a class="hover:text-yellow-600 transition" href="#home">
+              Beranda
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-yellow-600 transition" href="#about">
+              Tentang
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-yellow-600 transition" href="#services">
+              Layanan
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-yellow-600 transition" href="#portfolio">
+              Portofolio
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-yellow-600 transition" href="#contact">
+              Kontak
+            </a>
+          </li>
+        </ul>
+        <button
+          aria-label="Toggle menu"
+          class="md:hidden text-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-600"
+          id="menu-btn"
+        >
+          <i class="fas fa-bars fa-lg"> </i>
+        </button>
+      </div>
+      <div
+        class="md:hidden bg-white shadow-md border-t border-gray-200 hidden"
+        id="menu"
+      >
+        <ul
+          class="flex flex-col space-y-3 px-6 py-4 font-semibold text-gray-700"
+        >
+          <li>
+            <a class="block hover:text-yellow-600 transition" href="#home">
+              Beranda
+            </a>
+          </li>
+          <li>
+            <a class="block hover:text-yellow-600 transition" href="#about">
+              Tentang
+            </a>
+          </li>
+          <li>
+            <a class="block hover:text-yellow-600 transition" href="#services">
+              Layanan
+            </a>
+          </li>
+          <li>
+            <a class="block hover:text-yellow-600 transition" href="#portfolio">
+              Portofolio
+            </a>
+          </li>
+          <li>
+            <a class="block hover:text-yellow-600 transition" href="#contact">
+              Kontak
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section
+      class="pt-24 bg-gradient-to-r from-yellow-100 via-yellow-50 to-yellow-100 min-h-screen flex flex-col justify-center items-center text-center px-6"
+      id="home"
+    >
+      <img
+        alt="Luxury modern government asset management building with gold accents and glass facade under bright blue sky"
+        class="rounded-xl shadow-2xl mb-8 max-w-full w-[600px] object-cover"
+        height="400"
+        loading="lazy"
+        src="BKHIT.jpg"
+        width="600"
+      />
+      <h1
+        class="text-5xl md:text-6xl font-playfair font-extrabold text-yellow-700 mb-4 leading-tight"
+      >
+        BMN
+        <br />
+        <span class="text-gray-800">
+          Pengelolaan Terbaik &amp; Terpercaya
+        </span>
+      </h1>
+      <p class="max-w-3xl text-lg md:text-xl text-gray-700 mb-8">
+        Menjaga dan mengelola aset negara dengan profesionalisme dan integritas
+        tinggi demi kemajuan bangsa.
+      </p>
+      <a
+        class="inline-block bg-yellow-600 hover:bg-yellow-700 text-white font-semibold px-8 py-4 rounded-lg shadow-lg transition"
+        href="#about"
+      >
+        Pelajari Lebih Lanjut
+      </a>
+    </section>
+    <!-- About Section -->
+    <section
+      class="max-w-7xl mx-auto px-6 py-20 md:py-32 flex flex-col md:flex-row items-center gap-12"
+      id="about"
+    >
+      <div class="md:w-1/2">
+        <img
+          alt="Elegant office workspace with gold and marble decor, large windows, and modern furniture"
+          class="rounded-xl shadow-xl object-cover w-full h-[320px] md:h-[400px]"
+          height="400"
+          loading="lazy"
+          src="Ruang Rapat BMN yang Modern.png"
+          width="600"
+        />
+      </div>
+      <div class="md:w-1/2 space-y-6">
+        <h2 class="text-4xl font-playfair font-bold text-yellow-700">
+          Tentang BMN
+        </h2>
+        <p class="text-gray-700 text-lg leading-relaxed">
+          BMN (Barang Milik Negara) adalah lembaga yang bertanggung jawab dalam
+          pengelolaan aset negara secara profesional dan transparan. Kami
+          berkomitmen untuk menjaga nilai aset dan memastikan pemanfaatan yang
+          optimal demi kemajuan bangsa.
+        </p>
+        <p class="text-gray-600 text-base italic">
+          "Integritas, Profesionalisme, dan Keberlanjutan adalah pondasi kami."
+        </p>
+        <a
+          class="inline-block mt-4 bg-yellow-600 hover:bg-yellow-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition"
+          href="#services"
+        >
+          Lihat Layanan Kami
+        </a>
+      </div>
+    </section>
+    <!-- Services Section -->
+    <section class="bg-white py-20 px-6 max-w-7xl mx-auto" id="services">
+      <h2
+        class="text-4xl font-playfair font-bold text-yellow-700 text-center mb-16"
+      >
+        Layanan Kami
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
+        <div
+          class="flex flex-col items-center text-center space-y-6 p-6 rounded-xl shadow-lg border border-yellow-100 hover:shadow-2xl transition"
+        >
+          <img
+            alt="Icon representing asset management with golden shield and documents"
+            class="w-24 h-24 object-contain"
+            height="120"
+            loading="lazy"
+            src="https://storage.googleapis.com/a1aa/image/b4e3ef65-69cc-42c0-871d-6824cff2f8a5.jpg"
+            width="120"
+          />
+          <h3 class="text-2xl font-semibold text-yellow-700">Manajemen Aset</h3>
+          <p class="text-gray-600">
+            Pengelolaan aset negara secara efektif dan efisien untuk menjaga
+            nilai dan keberlanjutan.
+          </p>
+        </div>
+        <div
+          class="flex flex-col items-center text-center space-y-6 p-6 rounded-xl shadow-lg border border-yellow-100 hover:shadow-2xl transition"
+        >
+          <img
+            alt="Icon representing inventory with golden boxes and checklist"
+            class="w-24 h-24 object-contain"
+            height="120"
+            loading="lazy"
+            src="https://storage.googleapis.com/a1aa/image/48e168c5-838a-4b91-1b83-ef07bb9c793f.jpg"
+            width="120"
+          />
+          <h3 class="text-2xl font-semibold text-yellow-700">Inventarisasi</h3>
+          <p class="text-gray-600">
+            Pendataan dan pencatatan aset secara akurat untuk transparansi dan
+            akuntabilitas.
+          </p>
+        </div>
+        <div
+          class="flex flex-col items-center text-center space-y-6 p-6 rounded-xl shadow-lg border border-yellow-100 hover:shadow-2xl transition"
+        >
+          <img
+            alt="Icon representing consulting with golden handshake and documents"
+            class="w-24 h-24 object-contain"
+            height="120"
+            loading="lazy"
+            src="https://storage.googleapis.com/a1aa/image/1ead2e58-d7d3-4d05-2008-b825e1a4b0e1.jpg"
+            width="120"
+          />
+          <h3 class="text-2xl font-semibold text-yellow-700">
+            Konsultasi &amp; Pelatihan
+          </h3>
+          <p class="text-gray-600">
+            Memberikan pelatihan dan konsultasi untuk meningkatkan kapasitas
+            pengelola aset.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section -->
+    <section class="bg-yellow-50 py-20 px-6 max-w-7xl mx-auto" id="portfolio">
+      <h2
+        class="text-4xl font-playfair font-bold text-yellow-700 text-center mb-16"
+      >
+        Portofolio Aset BMN
+      </h2>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-6xl mx-auto"
+      >
+        <div
+          class="rounded-xl overflow-hidden shadow-lg border border-yellow-100 hover:shadow-2xl transition"
+        >
+          <img
+            alt="Luxury government building with gold accents and glass facade surrounded by landscaped gardens"
+            class="w-full h-48 object-cover"
+            height="300"
+            loading="lazy"
+            src="karantina.jpg"
+            width="400"
+          />
+          <div class="p-6 bg-white">
+            <h3 class="text-xl font-semibold text-yellow-700 mb-2">
+              balai karantina hewan ikan dan tumbuhan
+            </h3>
+            <p class="text-gray-600 text-sm">
+              bangunan kantor BKHIT maluku terlihat megah dengan desain modern,
+              terdiri dari 3 lantai dengan dinding kaca besar yang memberi kesan terbuka dan terang
+            </p>
+          </div>
+        </div>
+        <div
+          class="rounded-xl overflow-hidden shadow-lg border border-yellow-100 hover:shadow-2xl transition"
+        >
+          <img
+            alt="Luxury government vehicle fleet with gold trim parked in a row on marble driveway"
+            class="w-full h-48 object-cover"
+            height="300"
+            loading="lazy"
+            src="kendaraan dinas.jpg"
+            width="400"
+          />
+          <div class="p-6 bg-white">
+            <h3 class="text-xl font-semibold text-yellow-700 mb-2">
+              Kendaraan Dinas 
+            </h3>
+            <p class="text-gray-600 text-sm">
+              mobil & motor dinas yang di gunakan untuk bepergian ketika di beri tugas oleh atasan
+            </p>
+          </div>
+        </div>
+        <div
+          class="rounded-xl overflow-hidden shadow-lg border border-yellow-100 hover:shadow-2xl transition"
+        >
+          <img
+            alt="Luxury office interiors with gold decor, marble floors, and modern furniture"
+            class="w-full h-48 object-cover"
+            height="300"
+            loading="lazy"
+            src="interior.jpg"
+            width="400"
+          />
+          <div class="p-6 bg-white">
+            <h3 class="text-xl font-semibold text-yellow-700 mb-2">
+              Interior Kantor BKHIT
+            </h3>
+            <p class="text-gray-600 text-sm">
+              sebuah ruangan dalam gedung dengan lantai keramik mengkilap berwarna terang. Ruangan tampak cukup luas dengan dinding berwarna krem dan pilar-pilar berwarna cokelat tua.
+
+            Di bagian kiri terlihat dispenser air dengan galon biru, beberapa kursi, serta meja dekat jendela besar yang memancarkan cahaya dari luar. Di sisi kanan, ada beberapa kursi dengan jaket merah yang disampirkan di salah satunya, serta dua orang yang duduk di area agak gelap. Terdapat juga tanaman dalam pot diletakkan di sudut ruangan dekat pilar.
+
+            Secara keseluruhan, ruangan tampak seperti bagian dari gedung perkantoran, kampus, atau ruang tunggu dengan suasana yang bersih dan rapi.
+            </p>
+          </div>
+        </div>
+        <div
+          class="rounded-xl overflow-hidden shadow-lg border border-yellow-100 hover:shadow-2xl transition"
+        >
+          <img
+            alt="Luxury warehouse with organized gold storage racks and bright lighting"
+            class="w-full h-48 object-cover"
+            height="300"
+            loading="lazy"
+            src="https://storage.googleapis.com/a1aa/image/27fa467a-f215-4988-fdc6-0d4346be8b4e.jpg"
+            width="400"
+          />
+          <div class="p-6 bg-white">
+            <h3 class="text-xl font-semibold text-yellow-700 mb-2">
+              Gudang Penyimpanan Aset
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Fasilitas penyimpanan aset dengan sistem keamanan dan pengelolaan
+              terbaik.
+            </p>
+          </div>
+        </div>
+        <div
+          class="rounded-xl overflow-hidden shadow-lg border border-yellow-100 hover:shadow-2xl transition"
+        >
+          <img
+            alt="Luxury IT infrastructure room with gold accents, servers, and ambient lighting"
+            class="w-full h-48 object-cover"
+            height="300"
+            loading="lazy"
+            src="IT.jpg"
+            width="400"
+          />
+          <div class="p-6 bg-white">
+            <h3 class="text-xl font-semibold text-yellow-700 mb-2">
+              Infrastruktur IT Modern
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Ruang server dan infrastruktur IT 
+            </p>
+          </div>
+        </div>
+        <div
+          class="rounded-xl overflow-hidden shadow-lg border border-yellow-100 hover:shadow-2xl transition"
+        >
+          <img
+            alt="Luxury meeting room with gold chandeliers, large wooden table, and leather chairs"
+            class="w-full h-48 object-cover"
+            height="300"
+            loading="lazy"
+            src="ruang rapat.jpg"
+            width="400"
+          />
+          <div class="p-6 bg-white">
+            <h3 class="text-xl font-semibold text-yellow-700 mb-2">
+              Ruang Rapat jumrin
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Ruang rapat dengan fasilitas lengkap untuk diskusi 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="py-20 px-6 max-w-4xl mx-auto" id="contact">
+      <h2
+        class="text-4xl font-playfair font-bold text-yellow-700 text-center mb-12"
+      >
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 mt-20">
+      <div
+        class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0"
+      >
+        <div class="flex items-center space-x-3">
+          <img
+            alt="Logo BMN luxury gold emblem on black background small"
+            class="w-10 h-10 object-contain"
+            height="40"
+            src="ChatGPT Image 29 Agu 2025, 12.21.16.png"
+            width="40"
+          />
+          <span class="text-yellow-500 font-playfair font-bold text-xl">
+            BMN
+          </span>
+        </div>
+        <p class="text-sm md:text-base">
+          © 2025 BMN. Semua hak cipta dilindungi.
+        </p>
+        <div class="flex space-x-6 text-yellow-500 text-xl">
+          <div class="flex space-x-6 text-yellow-500 text-xl">
+            <a id="waLink" 
+            target="_blank"
+            rel="noopener" 
+     aria-label="WhatsApp"
+     class="hover:text-green-500 transition">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <!-- Ikon YouTube -->
+  <a href="https://www.youtube.com/@YusrilGaming-h9v" 
+     target="_blank" 
+     rel="noopener" 
+     aria-label="YouTube"
+     class="hover:text-red-600 transition">
+    <i class="fab fa-youtube"></i>
+  </a>
+  <!-- Ikon Email (mailto) -->
+<a
+  href="mailto:yusrilgaming@gmail.com?subject=Halo%20dari%20Website&body=Halo%2C%20saya%20ingin%20bertanya%20tentang%20..."
+  aria-label="Email"
+  class="hover:text-green-600 transition"
+  rel="noopener"
+>
+  <i class="fas fa-envelope"></i>
+</a>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

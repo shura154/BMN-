@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Serif+Display&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Libertinus+display' serif;
+}
+
+ .flex {
+      display: flex;
+      justify-content: center;   /* Tengah horizontal */
+      align-items: center;       /* Tengah vertikal */
+      height: 100vh;             /* Full layar */
+      font-size: 3rem;           /* Ukuran icon */
+      color: #FFD700;            /* text-yellow-500 */
+    }
+
+    .wa-link {
+      color: #25D366;            /* Hijau WhatsApp */
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .wa-link:hover {
+      transform: scale(1.2);     /* Efek zoom saat hover */
+    }
+
+
+
+
+
